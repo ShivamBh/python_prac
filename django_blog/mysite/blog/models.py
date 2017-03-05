@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
+from taggit.managers import TaggableManager
 
 # Create your models here.
 
@@ -41,6 +42,7 @@ class Post(models.Model):
 
 	objects = models.Manager() #default manager
 	published = PublishedManager() #custom manager
+	tags = TaggableManager() #custom manager for tags functionality
 
 class Comment(models.Model):
 	post = models.ForeignKey(Post, related_name='comments')
