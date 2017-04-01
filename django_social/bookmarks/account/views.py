@@ -26,4 +26,6 @@ def user_login(request):
 
 @login_required
 def dashboard(request):
+
+	#section variable tracks which section the user was watching
 	return render(request, 'account/dashboard.html', {'section': 'dashboard'})
