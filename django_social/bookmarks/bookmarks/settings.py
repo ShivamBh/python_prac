@@ -107,3 +107,5 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = reverse_lazy('dashboard') #which url to redirect after login if there's no 'next' param passed
 LOGIN_URL = reverse_lazy('login')
 LOGOUT_URL = reverse_lazy('logout')
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
