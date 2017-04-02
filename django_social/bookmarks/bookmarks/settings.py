@@ -40,6 +40,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'account',
     'django.contrib.admin',
+    'social_django',
+    'social.apps.django_app.default',
+    'images',
 )
 
 MIDDLEWARE_CLASSES = (
