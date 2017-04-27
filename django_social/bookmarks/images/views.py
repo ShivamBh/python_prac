@@ -23,6 +23,6 @@ def image_create(request):
 	else:
 		form = ImageCreateForm(data=request.GET)
 
-	return render(request, 'images/image/create.html', {'section':section, 'form':form})
+	return render(request, 'images/image/create.html', {'section':'images', 'form':form})
 
 
